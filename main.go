@@ -28,7 +28,7 @@ func (player *Player) addHealth(amount uint) {
 	if player.health > player.maxHealth {
 		player.health = player.maxHealth
 	}
-	fmt.Println(player.name, "Add", amount, "health ->", player.health)
+	fmt.Println("to", player.name, "added", amount, "health, remaining health->", player.health)
 }
 
 func (player *Player) applyDamage(amount uint) {
@@ -37,7 +37,7 @@ func (player *Player) applyDamage(amount uint) {
 	}else{
 		player.health -= amount
 	}
-	fmt.Println(player.name, "Damage", amount,"->",player.health)
+	fmt.Println(player.name, "took", amount,"damage , remaining health ->",player.health)
 }
 
 func (player *Player) addEnergy(amount uint) {
@@ -45,7 +45,7 @@ func (player *Player) addEnergy(amount uint) {
 	if player.energy > player.maxEnergy {
 		player.energy = player.maxEnergy
 	}
-	fmt.Println(player.name, "Add", amount, "energy ->", player.energy)
+	fmt.Println("to", player.name, "added", amount, "energy, remaining energy->", player.energy)
 }
 
 func (player *Player) consumeEnergy(amount uint) {
@@ -54,7 +54,7 @@ func (player *Player) consumeEnergy(amount uint) {
 	}else{
 		player.energy -= amount
 	}
-	fmt.Println(player.name, "Consume", amount,"energy ->",player.energy)
+	fmt.Println(player.name, "consumed", amount,"energy, remaining energy->", player.energy)
 }
 
 
