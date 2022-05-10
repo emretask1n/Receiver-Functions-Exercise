@@ -1,5 +1,5 @@
-# Reciever-Functions-Exercise
-## Zero To Mastery Reciever Functions Exercise with Golang
+# Receiver-Functions-Exercise
+## Zero To Mastery Receiver Functions Exercise with Golang
 
 
 
